@@ -27,7 +27,7 @@
   /* modules/navigation.css */
   
   :root {
-    --navigation-background-color: rgb(253, 253, 142);
+    --navigation-background-color: #fdfd8e;
     --navigation-border-radius: 0.25em;
   
     --navigation-anchor-padding: 1.5em;
@@ -75,4 +75,9 @@
   
   .left {
     margin-left: auto;
+  }
+
+  .home-icon {
+    height: 15px; 
+    width: 30px;
   }

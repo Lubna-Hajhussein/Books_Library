@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="styles/index.css" />
+		<link rel="stylesheet" href="styles/navbar.css" />
+		<link rel="stylesheet" href="pages/logIn/logIn.css" />
+	</head>
+	<body>
+		<!-- the navbar -->
+		<nav class="navigation navigation--inline">
+			<ul>
+				<li>
+					<a href="/">
+						<img
+							class="home-icon"
+							src="./assets/homeIcon.png"
+							alt="home-icon"
+						/>
+					</a>
+				</li>
+				<li>
+					<a href="/logIn">
+						<span class="invisible">LOGIN</span>
+					</a>
+				</li>
+				<li class="left">
+					<a href="/signUp">
+						<span class="invisible">SIGNUP</span>
+					</a>
+				</li>
+			</ul>
+		</nav>
+		<form class="box" action="/logIn" method="POST">
+			<h1>LOGIN</h1>
+			<input type="email" name="email" placeholder="Email" onfocus="this.removeAttribute('readonly');" readonly />
+			<input
+				type="password"
+				name="password"
+				placeholder="Password"
+				autocomplete="new-password"
+			/>
+			<input type="submit" value="LOGIN" />
+		</form>
+	</body>
+</html>
