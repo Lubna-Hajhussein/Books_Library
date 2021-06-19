@@ -12,11 +12,18 @@ const handleSignUp_errors = (err) => {
 
 const handleLogIn_errors = (err) => {
 	const errors = { email: "", password: "" };
+    console.log(err.message)
 
     // unregistered email
     if(err.message ==="unregistered email"){
         errors.email = "that email is not registered";
 		return errors;
+    }
+
+    // unconfirmed email
+    if(err.message === "unconfirmed email"){
+        errors.email = "unconfirmed email";
+        return errors;
     }
 
     // incorrect password

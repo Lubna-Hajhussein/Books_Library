@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="./styles/index.css" />
+		<link rel="stylesheet" href="./styles/navbar.css" />
+		<link rel="stylesheet" href="pages/admin/addBooks/addBooks.css" />
+		<!--  font awesome  -->
+		<link
+			rel="stylesheet"
+			href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+			integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+			crossorigin="anonymous"
+		/>
+	</head>
+	<body>
+		<!-- the navbar -->
+		<nav class="navigation navigation--inline">
+			<ul>
+				<li>
+					<a href="/">
+						<img
+							class="home-icon"
+							src="./assets/homeIcon.png"
+							alt="home-icon"
+						/>
+					</a>
+				</li>
+				<li>
+					<a href="/adminProfile">
+						<span class="invisible">Profile</span>
+					</a>
+				</li>
+				<li>
+					<a href="/normalUsers">
+						<span class="invisible">Users</span>
+					</a>
+				</li>
+				<li class="left">
+					<a href="/addBooks">
+						<span class="btn__signUp">Add Books</span>
+					</a>
+				</li>
+				<li class="left">
+					<a href="/signUp">
+						<span class="btn__signUp">Users Applications</span>
+					</a>
+				</li>
+			</ul>
+		</nav>
+		<div class="search-container">
+			<form class="container">
+				<input
+					type="text"
+					id="box"
+					placeholder="Search anything..."
+					class="search__box"
+				/>
+				<i
+					class="fas fa-search search__icon"
+					id="icon"
+					onclick="toggleShow()"
+				></i>
+			</form>
+		</div>
+		<div class="cards-container"></div>
+		<script src="pages/admin/addBooks/bookCard.js"></script>
+		<script src="pages/admin/addBooks/bookModal.js"></script>
+		<script src="pages/admin/addBooks/addBooks.js"></script>
+	</body>
+</html>

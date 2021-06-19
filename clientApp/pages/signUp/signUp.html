@@ -34,7 +34,7 @@
 				</li>
 			</ul>
 		</nav>
-		<form class="box" action="/signUp" method="POST">
+		<form class="box">
 			<h1>SignUp</h1>
 			<input
 				type="text"
@@ -42,14 +42,12 @@
 				readonly
 				name="username"
 				placeholder="Username"
+				required
 			/>
-			<input type="email" name="email" placeholder="Email" />
-			<input
-				type="password"
-				name="password"
-				placeholder="Password"
-			/>
+			<input type="email" name="email" placeholder="Email" required />
+			<input type="password" name="password" placeholder="Password" required />
 			<input type="submit" value="SIGNUP" />
 		</form>
+		<script src="pages/signUp/signUp.js"></script>
 	</body>
 </html>

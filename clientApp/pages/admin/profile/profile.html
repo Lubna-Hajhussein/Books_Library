@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="./styles/index.css" />
+		<link rel="stylesheet" href="./styles/navbar.css" />
+		<link rel="stylesheet" href="pages/admin/profile/profile.css" />
+	</head>
+	<body>
+		<!-- the navbar -->
+		<nav class="navigation navigation--inline">
+			<ul>
+				<li>
+					<a href="/">
+						<img
+							class="home-icon"
+							src="./assets/homeIcon.png"
+							alt="home-icon"
+						/>
+					</a>
+				</li>
+				<li>
+					<a href="/adminProfile">
+						<span class="invisible">Profile</span>
+					</a>
+				</li>
+				<li>
+					<a href="/normalUsers">
+						<span class="invisible">Users</span>
+					</a>
+				</li>
+				<li class="left">
+					<a href="/addBooks">
+						<span class="btn__signUp">Add Books</span>
+					</a>
+				</li>
+				<li class="left">
+					<a href="/signUp">
+						<span class="btn__signUp">Users Applications</span>
+					</a>
+				</li>
+			</ul>
+		</nav>
+		<div class="wrapper">
+            <div >
+                <img class="file-upload" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5gmlo2Dl4M2wtWy2vTH0V82COIqbxQWSg7Q&usqp=CAU" alt="">
+            </div>
+          </div>
+          <div class="upload-btn-wrapper">
+            <button class="btn">Upload a Picture</button>
+            <input type="file" name="myfile" />
+          </div>
+          <div class="form-style-10">
+            <h1>Edit Profile!</h1>
+            <form>
+                <div class="section">Name & Description</div>
+                <div class="inner-wrap">
+                    <label>Your Full Name <input readonly type="text" name="field1" /></label>
+                    <label>Description <textarea name="field2"></textarea></label>
+                </div>
+            
+                <div class="section">Email & Role</div>
+                <div class="inner-wrap">
+                    <label>Email Address <input type="email" name="field3" /></label>
+                    <label>Role<input type="text" name="field4" /></label>
+                </div>
+                <div class="button-section">
+                  <input type="submit" name="Sign Up" value="Edit" />
+                </div>
+            </form>
+            </div>
+
+		<script src="pages/admin/profile/profile.js"></script>
+	</body>
+</html>

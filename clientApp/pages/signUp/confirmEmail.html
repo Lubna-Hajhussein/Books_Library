@@ -5,9 +5,9 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Document</title>
-		<link rel="stylesheet" href="styles/index.css" />
-		<link rel="stylesheet" href="styles/navbar.css" />
-		<link rel="stylesheet" href="pages/logIn/logIn.css" />
+		<link rel="stylesheet" type="text/css" href="styles/index.css" />
+		<link rel="stylesheet" type="text/css" href="styles/navbar.css" />
+		<link rel="stylesheet" href="pages/signUp/confirmEmail.css" />
 	</head>
 	<body>
 		<!-- the navbar -->
@@ -35,16 +35,17 @@
 			</ul>
 		</nav>
 		<form class="box">
-			<h1>LOGIN</h1>
-			<input type="email" name="email" placeholder="Email" onfocus="this.removeAttribute('readonly');" readonly />
+			<h1>Confirmation Code</h1>
 			<input
-				type="password"
-				name="password"
-				placeholder="Password"
-				autocomplete="new-password"
+				type="text"
+				onfocus="this.removeAttribute('readonly');"
+				readonly
+				name="confirmationCode"
+				placeholder="_ _ _ _ _ _ _ _ _"
+				required
 			/>
-			<input type="submit" value="LOGIN" />
+			<input type="submit" value="CONFIRM" />
 		</form>
-		<script src="pages/logIn/logIn.js"></script>
+		<script src="pages/signUp/confirmEmail.js"></script>
 	</body>
 </html>

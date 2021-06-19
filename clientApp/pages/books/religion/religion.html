@@ -1,12 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <div>Religion books</div>
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="styles/index.css" />
+		<link rel="stylesheet" href="styles/navbar.css" />
+		<link rel="stylesheet" href="pages/books/index.css" />
+	</head>
+	<body>
+		<!-- the navbar -->
+		<nav class="navigation navigation--inline">
+			<ul>
+				<li>
+					<a href="/">
+						<img
+							class="home-icon"
+							src="./assets/homeIcon.png"
+							alt="home-icon"
+						/>
+					</a>
+				</li>
+			</ul>
+		</nav>
+		<div class="cards-container"></div>
+		<script src="pages/books/index.js"></script>
+		<script src="pages/books/bookCard.js"></script>
+		<script src="pages/books/religion/religion.js"></script>
+	</body>
 </html>
